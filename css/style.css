@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 400px;
+  position: fixed;
+
+}
+
+header {
+  background-color: rgb(175, 64, 64);
+  position: relative;
+  height: 50px;
+}
+
+header h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 0px rgb(24, 24, 24);
+}
+
+main {
+  background-color: rgba(182, 170, 170, 0.445);
+  padding-bottom: 5px;
+}
+.input-block p {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 5px;
+  color: brown;
+}
+.input-task {
+  margin-left: 13px;
+  margin-top: 10px;
+  width: 360px;
+  padding: 5px;
+  font-size: 10px;
+  font-style: italic;
+  border: 2px solid rgba(143, 122, 122, 0.438);
+}
+
+.input-task:focus {
+  outline: 0;
+  border: 2px solid rgb(175, 64, 64);
+  border-radius: 5px;
+}
+
+.tasks > li{
+  list-style: none;
+  font-size: 14px;
+  box-shadow: 0px 0px 3px rgba(175, 64, 64, 0.322);
+  border-radius: 5px;
+  margin: 6px 13px;
+  padding: 5px;
+  background-color: rgb(241, 234, 234);
+  color: rgb(22, 22, 22);
+}
+
+li>span {
+  margin-left: 30px;
+}
+
+li > div {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 24px;
+  border-radius: 5px;
+  background-color: rgba(138, 131, 121, 0.384);
+}
+
+li> .delete-button {
+  display: inline;
+  position: absolute;
+  left: 350px;
+  border-radius: 20px;
+  background-image: url(../img/delete.png);
+  background-repeat: round;
+}
+
+.complited {
+  background-image: url(../img/compl.png);
+  background-repeat: round;
+}
+.compl-task {
+  color: rgba(66, 66, 66, 0.514);
+  text-decoration: line-through;
+}
+
+
